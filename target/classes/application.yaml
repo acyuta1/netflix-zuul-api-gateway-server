@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: netflix-zuul-api-gateway-server
+
+server:
+  port: 8765
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+
+#Important, to run:
+#http://localhost:8765/{service-name}/{uri}
+#http://localhost:8765/comments-service/api/comments/add-feign
